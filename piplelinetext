@@ -15,7 +15,7 @@ pipeline {
 	                             echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
 	                             echo "${Jenkinsdemo}"
 	                             echo "${PATH}"
-	                             sh 'mvn compile'
+	                             bat 'mvn compile'
 	                      }
 	              }
 	              stage('Test') {
